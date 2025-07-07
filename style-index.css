@@ -100,7 +100,10 @@
 
 .video-individual {
     width: 48%; /* Ajuste conforme necessário (ex: 48% para 2 vídeos com espaço) */
-    max-height: 35git add .0px; /* Altura opcional, se quiser limitar */
+    max-height: 350px; /* Altura opcional, se quiser limitar */
     object-fit: cover;
     border-radius: 8px; /* opcional: cantos arredondados */
 }
+
+
+/*teste*/
