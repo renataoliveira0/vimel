@@ -161,3 +161,14 @@ body {
   height: 100%;
   object-fit: contain;
 }
+
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 480px) {
+  .whatsappBotaoFixo {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
