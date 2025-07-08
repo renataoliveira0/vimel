@@ -56,7 +56,7 @@
     </nav>
   </header>
 
-  <!-- Carousel -->
+  <!-- Carousel 
   <div id="carouselVimel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -87,7 +87,77 @@
     <button class="carousel-control-next" type="button" data-bs-target="#carouselVimel" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
+  </div> -->
+
+  <!-- Carousel -->
+  <div id="carouselVimel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <picture>
+          <source srcset="img/2-mobile.png" media="(max-width: 768px)">
+          <img src="img/2.png" class="d-block w-100" alt="Bolo personalizado 1" />
+        </picture>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <picture>
+          <source srcset="img/3-mobile.png" media="(max-width: 768px)">
+          <img src="img/3.png" class="d-block w-100" alt="Doces artesanais" />
+        </picture>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <picture>
+          <source srcset="img/4-mobile.png" media="(max-width: 768px)">
+          <img src="img/4.png" class="d-block w-100" alt="Sobremesas decoradas" />
+        </picture>
+      </div>
+
+      <!-- Slide 4: os dois vídeos juntos (visível só no desktop) -->
+      <div class="carousel-item" id="slide-videos-duplo">
+        <div class="video-duplo">
+          <video class="video-individual" autoplay muted loop playsinline>
+            <source src="img/video1.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+          <video class="video-individual" autoplay muted loop playsinline>
+            <source src="img/video2.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+        </div>
+      </div>
+
+      <!-- Slide 5: só vídeo 1 (visível só no mobile) -->
+      <div class="carousel-item" id="slide-video-1-mobile">
+        <video class="video-individual" autoplay muted loop playsinline>
+          <source src="img/video3.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+      </div>
+
+      <!-- Slide 6: só vídeo 2 (visível só no mobile) -->
+      <div class="carousel-item" id="slide-video-2-mobile">
+        <video class="video-individual" autoplay muted loop playsinline>
+          <source src="img/video2.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+      </div>
+
+    </div>
+
+    <!-- Botões de controle -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVimel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselVimel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
+
 
   <!-- Seção Instagram -->
   <section class="bg-light py-5 text-center">
@@ -137,7 +207,7 @@
         if (
           bsCollapse &&
           window.getComputedStyle(document.querySelector(".navbar-toggler")).display !==
-            "none"
+          "none"
         ) {
           bsCollapse.hide();
         }
