@@ -1,199 +1,108 @@
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-      padding: 10px 0;
-    }
-
-    .carousel-item img {
-      height: 500px;
-      object-fit: cover;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 10px;
-      margin-top: 30px;
-    }
-
-
-
-    .nav-link {
-      font-weight: 500;
-      transition: all 0.2s ease-in-out;
-    }
-
-    /*
-
-    .nav-link:hover {
-        text-decoration: underline;
-        color: #ff009d;
-    }
-        */
-
-    /*
-   .nav-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-color: #ffa5d8;
-  color: #6B1B1B;
+/* =============================
+   GERAL
+============================= */
+body {
+  font-family: Arial, sans-serif;
 }
 
-*/
-    /*
+.navbar {
+  padding: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* =============================
+   NAVEGAÇÃO
+============================= */
 .nav-link {
   color: #6B1B1B;
   text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid #ffa5d8;
-  color: #6B1B1B;
+  background-color: #a65a4b;
+  color: #fff;
 }
-*/
 
-    .nav-link {
-      color: #6B1B1B;
-      text-decoration: none;
-      padding: 4px 8px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+.nav-item {
+  margin-right: 20px;
+}
 
-    .nav-link:hover {
-      background-color: #a65a4b;
-      /* marrom claro */
-      color: #fff;
-      /* texto branco para contraste */
-    }
+/* =============================
+   CARROSSEL DE IMAGENS
+============================= */
+.carousel-inner picture,
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 
-    .nav-item {
-      margin-right: 20px;
-      /* espaçamento entre os links */
-    }
+.carousel-inner {
+  max-height: 600px;
+  overflow: hidden;
+}
 
-
-
-    /* carousel
 .carousel-item img {
-  width: 100%;         /* Ocupa toda a largura do carrossel 
-  height: 400px;       /* Altura fixa, você pode ajustar para 350px, 450px, etc
-  object-fit: cover;   /* Corta a imagem para preencher sem distorcer
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background-color: #fff;
 }
-*/
 
-    .carousel-item img {
-      width: 100%;
-      height: 400px;
-      /* altura fixa */
-      object-fit: contain;
-      /* mantém a imagem toda visível, sem cortes */
-      background-color: #fff;
-      /* opcional, para fundo branco nos espaços */
-    }
+/* Celular: aumenta a altura pra mostrar mais da imagem */
+@media (max-width: 768px) {
+  .carousel-inner picture,
+  .carousel-inner img {
+    height: 100vw;
+    object-fit: cover;
+  }
 
-    /*
-    .video-duplo {
-      display: flex;
-      gap: 20px;
-      /* Espaço entre os vídeos 
-      justify-content: center;
-      /* Centraliza na horizontal
-      align-items: center;
-      /* Alinha na vertical
-      flex-wrap: wrap;
-      /* Se for em tela pequena, quebra linha 
-    }
+  .carousel-inner {
+    max-height: none;
+  }
+}
 
-    .video-individual {
-      width: 48%;
-      /* Ajuste conforme necessário (ex: 48% para 2 vídeos com espaço) 
-      max-height: 350px;
-      /* Altura opcional, se quiser limitar 
-      object-fit: cover;
-      border-radius: 8px;
-      /* opcional: cantos arredondados 
-    } */
+/* =============================
+   CARROSSEL DE VÍDEOS
+============================= */
 
-    .video-duplo {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+/* Estilo geral para vídeos */
+.video-duplo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
 
-    .video-individual {
-      width: 48%;
-      max-height: 350px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+.video-individual {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-    /* 🎯 Estilo para CELULAR: mostra só 1 vídeo por vez */
-    @media (max-width: 768px) {
-      .video-individual {
-        width: 100%;
-        max-height: 280px;
-      }
+/* Desktop: dois vídeos lado a lado */
+@media (min-width: 769px) {
+  .video-duplo .video-individual {
+    width: 48%;
+  }
+}
 
-      .video-duplo video:nth-child(2) {
-        display: none;
-        /* Esconde o segundo vídeo */
-      }
-    }
-
-
-
-
-    /*teste*/
-
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-    /*teste*/
-
-    @media (max-width: 492px) {
-
-
-      .carousel-inner picture,
-      .carousel-inner img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-      }
-
-      /* Define altura mínima pra manter o carrossel bonito */
-      .carousel-inner {
-        max-height: 600px;
-        overflow: hidden;
-      }
-
-      /* Celular: aumenta a altura pra mostrar mais da imagem */
-      @media (max-width: 768px) {
-
-        .carousel-inner picture,
-        .carousel-inner img {
-          height: 100vw;
-          /* altura proporcional à largura da tela */
-          object-fit: cover;
-        }
-
-        .carousel-inner {
-          max-height: none;
-        }
-      }
-    }
+/* Mobile: vídeos ocupam toda a largura */
+@media (max-width: 768px) {
+  .video-individual {
+    width: 100%;
+    max-height: 300px;
+  }
+}
