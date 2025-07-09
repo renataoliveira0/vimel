@@ -1,0 +1,68 @@
+/* =============================
+   GERAL
+============================= */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  padding: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* =============================
+   NAVEGAÇÃO
+============================= */
+.nav-link {
+  color: #6B1B1B;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #a65a4b;
+  color: #fff;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+/* botão whatsapp*/
+
+.whatsappBotaoflutuante {
+  position: fixed;
+  bottom: 20px;      /* distância do rodapé */
+  right: 20px;       /* distância da direita */
+  width: 60px;       /* tamanho do ícone */
+  height: 60px;
+  z-index: 1000;     /* para ficar sobre tudo */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsappBotaoflutuante img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 480px) {
+  .whatsappBotaoFixo {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+}

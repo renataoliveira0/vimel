@@ -1,0 +1,45 @@
+.sobre {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #6B1B1B;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.foto-vilma {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%; /* Torna a imagem circular */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.texto-sobre {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .sobre-conteudo {
+    flex-direction: column;
+  }
+
+  .texto-sobre {
+    text-align: center;
+  }
+}

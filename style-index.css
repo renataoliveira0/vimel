@@ -1,39 +1,3 @@
-/* =============================
-   GERAL
-============================= */
-body {
-  font-family: Arial, sans-serif;
-}
-
-.navbar {
-  padding: 10px 0;
-}
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
-}
-
-/* =============================
-   NAVEGAÇÃO
-============================= */
-.nav-link {
-  color: #6B1B1B;
-  text-decoration: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: #a65a4b;
-  color: #fff;
-}
-
-.nav-item {
-  margin-right: 20px;
-}
 
 /* =============================
    CARROSSEL DE IMAGENS
@@ -71,47 +35,8 @@ body {
   }
 }
 
-/* =============================
-   CARROSSEL DE VÍDEOS
-============================= */
 
-/* Estilo geral para vídeos */
-.video-duplo {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
-
-.video-individual {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Desktop: dois vídeos lado a lado */
-@media (min-width: 769px) {
-  .video-duplo .video-individual {
-    width: 48%;
-  }
-}
-
-/* Mobile: vídeos ocupam toda a largura */
-@media (max-width: 768px) {
-  .video-individual {
-    width: 100%;
-    max-height: 300px;
-  }
-}
-
-
-
-/* texto com botao de whatsapp*/
-
-/* Container da seção de contato */
+/* Container da seção de contato botão do whatsapp abaixo do carossel */
 .contact-section {
   text-align: center;
   margin: 3rem auto;
@@ -143,32 +68,3 @@ body {
   background-color: #1ebe57;
 }
 
-.whatsappBotaoflutuante {
-  position: fixed;
-  bottom: 20px;      /* distância do rodapé */
-  right: 20px;       /* distância da direita */
-  width: 60px;       /* tamanho do ícone */
-  height: 60px;
-  z-index: 1000;     /* para ficar sobre tudo */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.whatsappBotaoflutuante img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-
-/* Ajustes para telas pequenas (celulares) */
-@media (max-width: 480px) {
-  .whatsappBotaoFixo {
-    width: 50px;
-    height: 50px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
