@@ -131,3 +131,10 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .produto {
+    max-width: 100%;
+    width: 100%;
+  }
+}
