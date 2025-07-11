@@ -42,14 +42,11 @@
 
 .foto-produto {
   width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
+  height: 250px;     /* você pode ajustar: 250px, 300px... */
+  object-fit: cover;
   display: block;
   background-color: #fff;
-  /* opcional, evita espaço vazio com cor estranha */
   border-bottom: 1px solid #eee;
-  /* separação visual suave */
 }
 
 
