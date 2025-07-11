@@ -134,7 +134,7 @@
 
 @media (max-width: 768px) {
   .produto {
-    max-width: 100%;
+    max-width: 100% !important;
     width: 100%;
   }
 }
