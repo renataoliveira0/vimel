@@ -4,7 +4,7 @@
 }
 
 .sobre h2 {
-  font-size: 2.5rem;
+  font-weight: 600;       /* fica elegante sem ficar muito grosso */
   margin-bottom: 30px;
   color: #6B1B1B;
 }

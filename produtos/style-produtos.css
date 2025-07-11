@@ -5,10 +5,19 @@
 }
 
 .produtos h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  /* menor e mais harmonioso */
+  margin: 40px 0 20px;
+  /* bom espaçamento em cima e embaixo */
   color: #6B1B1B;
+  text-align: center;
+  font-weight: 600;
+  /* fica elegante sem ficar muito grosso */
+  padding: 0;
+  /* remove o excesso de padding */
 }
+
+
 
 .produtos-conteudo {
   display: flex;
@@ -37,8 +46,10 @@
   max-height: 400px;
   object-fit: contain;
   display: block;
-  background-color: #fff; /* opcional, evita espaço vazio com cor estranha */
-  border-bottom: 1px solid #eee; /* separação visual suave */
+  background-color: #fff;
+  /* opcional, evita espaço vazio com cor estranha */
+  border-bottom: 1px solid #eee;
+  /* separação visual suave */
 }
 
 
@@ -67,5 +78,36 @@
 
   .texto-produto {
     text-align: center;
+  }
+}
+
+.lista-recheios {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  gap: 30px;
+  max-width: 600px;
+  margin: 10px auto;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.lista-recheios li {
+  text-align: left;
+  list-style-type: disc;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.produto-grande {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .produto-grande {
+    width: 100%;
   }
 }
