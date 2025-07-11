@@ -1,20 +1,17 @@
 .produtos {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   background-color: #fffaf8;
 }
 
 .produtos h2 {
   font-size: 2rem;
-  /* menor e mais harmonioso */
-  margin: 40px 0 20px;
-  /* bom espaçamento em cima e embaixo */
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
   color: #6B1B1B;
   text-align: center;
   font-weight: 600;
-  /* fica elegante sem ficar muito grosso */
-  padding: 0;
-  /* remove o excesso de padding */
 }
 
 .produtos-conteudo {
