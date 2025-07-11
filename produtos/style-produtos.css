@@ -17,28 +17,34 @@
   /* remove o excesso de padding */
 }
 
-
-
 .produtos-conteudo {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch; /* importante para alinhar as alturas */
   justify-content: center;
   gap: 40px;
 }
 
 .produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 320px;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  
+  /* Força o card a ter a altura máxima do container flex */
+  height: 100%;
 }
 
 .produto:hover {
   transform: scale(1.03);
 }
+
+
 
 .foto-produto {
   width: 100%;
@@ -53,7 +59,13 @@
 .texto-produto {
   padding: 20px;
   text-align: center;
+
+  flex-grow: 1; /* para ocupar espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .texto-produto h3 {
   color: #6B1B1B;
