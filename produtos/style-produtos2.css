@@ -2,11 +2,11 @@
   padding: 60px 20px;
   text-align: center;
   background-color: #fffaf8;
+  margin-top: 20px;
 }
 
 .produtos h2 {
   font-size: 2rem;
-  max-width: 1200px;
   margin: 40px auto 20px auto;
   padding: 0 20px;
   color: #6B1B1B;
@@ -17,8 +17,7 @@
 .produtos-conteudo {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
-  /* importante para alinhar as alturas */
+  align-items: stretch; /* mantém os cards com alturas iguais */
   justify-content: center;
   gap: 40px;
 }
@@ -27,27 +26,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 320px;
+  width: 100%;
+  max-width: 320px; /* garante largura consistente */
+  flex: 1 1 320px; /* permite que se adaptem com base no espaço, mas respeita o limite */
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-
-  /* Força o card a ter a altura máxima do container flex */
-  height: 100%;
+  height: 100%; /* força a altura igual no container flex */
 }
+
 
 .produto:hover {
   transform: scale(1.03);
 }
 
-
-
 .foto-produto {
   width: 100%;
   height: 250px;
-  /* você pode ajustar: 250px, 300px... */
   object-fit: cover;
   display: block;
   background-color: #fff;
@@ -55,17 +52,16 @@
 }
 
 
+
+
 .texto-produto {
   padding: 20px;
   text-align: center;
-
   flex-grow: 1;
-  /* para ocupar espaço disponível */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .texto-produto h3 {
   color: #6B1B1B;
@@ -73,21 +69,14 @@
   font-size: 1.2rem;
 }
 
+
+
+
+
 .texto-produto p {
   color: #444;
   font-size: 1rem;
   line-height: 1.5;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .produtos-conteudo {
-    flex-direction: column;
-  }
-
-  .texto-produto {
-    text-align: center;
-  }
 }
 
 .lista-recheios {
@@ -108,12 +97,13 @@
   font-size: 0.95rem;
 }
 
+
+
 .bloco-bolos {
   display: flex;
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
-  /* importante para responsividade */
   margin-bottom: 40px;
 }
 
@@ -122,22 +112,24 @@
   max-width: 480px;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
-  .bloco-bolos {
+  .produtos-conteudo {
     flex-direction: column;
     align-items: center;
   }
 
+  .texto-produto {
+    text-align: center;
+  }
+
+  .produto {
+    width: 100%;
+    max-width: 100%; /* usa toda a largura disponível no mobile */
+    flex: none; /* impede que se comportem como flex-item variável */
+  }
+
   .produto-grande {
     max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .produto {
-    max-width: 100% !important;
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
 }
