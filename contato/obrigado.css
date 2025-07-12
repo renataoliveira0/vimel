@@ -1,8 +1,12 @@
 /* ---------- Seção Obrigado ---------- */
-.obrigado {
+section.obrigado {
   background-color: #fffaf8;
   padding: 60px 20px;
-  text-align: center;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .obrigado h2 {
@@ -29,9 +33,4 @@
 
 .obrigado .btn:hover {
   background-color: #a94442;
-}
-
-.container2 {
-    margin-bottom: 12380px;
-    text-align: center;
 }
