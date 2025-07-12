@@ -76,6 +76,21 @@
                 required>
             </div>
             <div class="mb-3">
+              <label for="whatsapp" class="form-label">WhatsApp (opcional)</label>
+              <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="(XX) 9XXXX-XXXX">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Qual a melhor forma para entrarmos em contato?</label>
+              <div>
+                <input type="radio" id="contato_email" name="preferencia_contato" value="Email" checked>
+                <label for="contato_email">E-mail</label>
+              </div>
+              <div>
+                <input type="radio" id="contato_whatsapp" name="preferencia_contato" value="WhatsApp">
+                <label for="contato_whatsapp">WhatsApp</label>
+              </div>
+            </div>
+            <div class="mb-3">
               <label for="mensagem" class="form-label">Mensagem</label>
               <textarea class="form-control" id="mensagem" name="mensagem" rows="5"
                 placeholder="Escreva sua mensagem aqui" required></textarea>
