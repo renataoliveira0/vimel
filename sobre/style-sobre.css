@@ -44,3 +44,9 @@
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .sobre h2 {
+    font-size: 2rem; /* ou o tamanho que quiser igualar */
+  }
+}
