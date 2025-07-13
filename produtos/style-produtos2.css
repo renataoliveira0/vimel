@@ -1,5 +1,5 @@
 .produtos {
-  padding: 60px 20px;
+  padding: 30px;
   text-align: center;
   background-color: #fffaf8;
   margin-top: 20px;
@@ -113,6 +113,7 @@
   width: 100%;
   max-width: 480px;
 }
+
 
 /* Responsividade */
 @media (max-width: 768px) {
