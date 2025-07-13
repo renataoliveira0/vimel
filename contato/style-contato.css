@@ -3,7 +3,7 @@
 .contato {
   padding: 60px 20px;
   background-color: #fffaf8;
-  min-height: calc(100vh - 250px);
+  min-height: calc(150vh - 280px);
 }
 
 .conteudo-flex {
