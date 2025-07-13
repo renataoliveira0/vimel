@@ -4,9 +4,10 @@
 }
 
 .sobre h2 {
-  font-weight: 600;       /* fica elegante sem ficar muito grosso */
-  margin-bottom: 30px;
+  font-size: 2rem;
   color: #6B1B1B;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .sobre-conteudo {
