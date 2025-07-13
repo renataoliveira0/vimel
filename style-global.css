@@ -1,27 +1,25 @@
 /* =============================
    GERAL
 ============================= */
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-
-
-.navbar {
-  padding: 10px 0;
-}
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* =============================
    NAVEGAÇÃO
 ============================= */
+.navbar {
+  padding: 10px 0;
+}
+
 .nav-link {
   color: #6B1B1B;
   text-decoration: none;
@@ -39,15 +37,16 @@ body {
   margin-right: 20px;
 }
 
-/* botão whatsapp*/
-
+/* =============================
+   BOTÃO WHATSAPP
+============================= */
 .whatsappBotaoflutuante {
   position: fixed;
-  bottom: 20px;      /* distância do rodapé */
-  right: 20px;       /* distância da direita */
-  width: 60px;       /* tamanho do ícone */
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
   height: 60px;
-  z-index: 1000;     /* para ficar sobre tudo */
+  z-index: 1000;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -60,8 +59,7 @@ body {
   object-fit: contain;
 }
 
-
-/* Ajustes para telas pequenas (celulares) */
+/* Ajustes para telas pequenas */
 @media (max-width: 480px) {
   .whatsappBotaoflutuante {
     width: 50px;
@@ -71,11 +69,19 @@ body {
   }
 }
 
+/* =============================
+   FOOTER
+============================= */
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
 
 .footer p {
   margin: 5px 0;
   font-size: 0.9rem;
-  color: #888; /* tom discreto */
+  color: #888;
 }
 
 .footer a {
