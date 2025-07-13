@@ -1,8 +1,7 @@
 .produtos {
-  padding: 30px;
+  padding: 60px;
   text-align: center;
   background-color: #fffaf8;
-  margin-top: 20px;
 }
 
 .produtos h2 {
@@ -114,6 +113,9 @@
   max-width: 480px;
 }
 
+.produtos h2:not(:first-of-type) {
+  margin-top: 60px;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
